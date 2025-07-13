@@ -1,0 +1,25 @@
+{
+  "name": "understandingwebpack",
+  "version": "1.0.0",
+  "description": "This Project is aligned with a course which helps in understanding webpack, a popular javascript bundler that also helps bunding in other assets for web development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parasjain10/UnderstandingWebpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parasjain10/UnderstandingWebpack/issues"
+  },
+  "homepage": "https://github.com/parasjain10/UnderstandingWebpack#readme",
+  "devDependencies": {
+    "webpack": "^5.100.1",
+    "webpack-cli": "^6.0.1"
+  }
+}

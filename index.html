@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack</title>
+</head>
+<body>
+    
+    
+    <!-- 
+    <script src="./src/hello-world.js"></script>
+    <script src="./src/index.js"></script> 
+
+    In this if you see the file hello-world.js contain a function 
+     which is invoked in index.js but if the order of script is changed 
+     then function will not be called, thus there is a dependency issue.
+
+     <script src="./src/index.js"></script>
+     <script src="./src/hello-world.js"></script> 
+     // This will not work as helloWorld 
+     is not defined when index.js is executed.
+
+     Suppose we have multiple files and each file has dependencies on
+     other files, it can become difficult to manage the order in which
+     the scripts are loaded. This is where Webpack comes in.
+
+
+     Webpack is a module bundler that resolves these dependencies and
+     bundles the files together so that the function is available when
+     the script is executed.
+      -->
+    <script src="./dist/bundle.js"></script> 
+</body>
+</html>
