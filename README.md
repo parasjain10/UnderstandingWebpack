@@ -7,8 +7,12 @@ Start this Project: run npx webpack or npm run build to build a new bundle.js fi
 
 Switch different branches to understand different concepts accordingly
 
+
+
 Some key understandings are:
 
 1)what is asset modules how we can use it to serve different assets? 
 2)what is webpack loaders and how can we use it? 
-3)what are plugins?
+3)what are plugins? 
+
+Plugins are JS Library that add functionality to the webpack itself
