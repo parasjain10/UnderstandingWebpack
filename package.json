@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/parasjain10/UnderstandingWebpack#readme",
   "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.28.0",
+    "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
     "sass": "^1.89.2",
     "sass-loader": "^16.0.5",

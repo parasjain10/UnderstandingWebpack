@@ -34,14 +34,14 @@ module.exports={
                     }
                 }
             },
-            // {
-            //     test: /\.txt/,
-            //     type:"asset/source" // This will emit the file as a separate file and link to it in the JavaScript file
-            //     // This is useful for text files that you want to load in the JavaScript file
-            //     // and you want to keep the original file structure.
-            //     // If you want to inline the text file as a string in the JavaScript file,
-            //     // you can use "asset/inline" type instead.
-            // },
+            {
+                test: /\.txt/,
+                type:"asset/source" // This will emit the file as a separate file and link to it in the JavaScript file
+                // This is useful for text files that you want to load in the JavaScript file
+                // and you want to keep the original file structure.
+                // If you want to inline the text file as a string in the JavaScript file,
+                // you can use "asset/inline" type instead.
+            },
             {
                 test: /\.css$/,
                 use: [
@@ -56,6 +56,18 @@ module.exports={
                 ] // webpack process loaders from right to left, 
                 // first it will load sass-loader and then other loaders
                 // sass-loader converts sass-> css
+            },
+            {
+                 test:/\.js$/,
+                 exclude:/node_modules/,
+                 use :{
+                    loader: "babel-loader",
+                    options:{
+                        presets:["@babel/env"],
+                        plugins:["@babel/plugin-proposal-class-properties"]
+                    }
+                 }
+
             }
         ]
     }
