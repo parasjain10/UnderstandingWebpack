@@ -1,3 +1,4 @@
+const { type } = require("os");
 const path=require("path");
 module.exports={
     entry: "./src/index.js",
@@ -34,13 +35,28 @@ module.exports={
                 }
             },
             // {
-            //     type: /\.txt/,
+            //     test: /\.txt/,
             //     type:"asset/source" // This will emit the file as a separate file and link to it in the JavaScript file
             //     // This is useful for text files that you want to load in the JavaScript file
             //     // and you want to keep the original file structure.
             //     // If you want to inline the text file as a string in the JavaScript file,
             //     // you can use "asset/inline" type instead.
             // },
+            {
+                test: /\.css$/,
+                use: [
+                "style-loader","css-loader" // This css-loader is Use it to read and resolve CSS files,
+                // while style-loader is used to inject css into DOM 
+                ]
+            },
+            {
+                test: /\.scss$/,
+                use:[
+                    "style-loader","css-loader","sass-loader" 
+                ] // webpack process loaders from right to left, 
+                // first it will load sass-loader and then other loaders
+                // sass-loader converts sass-> css
+            }
         ]
     }
 }
